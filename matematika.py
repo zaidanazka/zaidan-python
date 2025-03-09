@@ -103,6 +103,8 @@ def matematika():
                 # 9  # Segi Enam       #
                 #====#=================#
                 """)
+                
+                setengah = 0.5
       
                 def persegi():
                     s = float(input("masukkan sisi : "))
@@ -116,13 +118,32 @@ def matematika():
                     r = float(input("masukkan jari jari : "))
                     print(phi*r**2)
                 def segitiga():
-                    konstansegitiga = 0.5
                     a = float(input("masukkan alas : "))
                     t = float(input("masukkan tinggi : "))
-                    print(konstansegitiga*a*t)
+                    print(setengah*a*t)
+                def jajargenjang():
+                    a = float(input("masukkan alas : "))
+                    t = float(input("masukkan tinggi : "))
+                    print(a*t)
+                def trapesium():
+                    a = float(input("masukkan sisi a : "))
+                    b = float(input("masukkan sisi b : "))
+                    t = float(input("masukkan tinggi : "))
+                    print(setengah*(a+b)*t)
+                def layang():
+                    d1 = float(input("masukkan diagonal 1 : "))
+                    d2 = float(input("masukkan diagonal 2 : "))
+                    print(setengah*d1*d2)
+                def segilima():
+                    p = float(input("masukkan keliling : "))
+                    a = float(input("masukkan apotema : "))
+                    print(setengah*p*a)
+                def segilima():
+                    p = float(input("masukkan keliling : "))
+                    a = float(input("masukkan apotema : "))
+                    print(setengah*a*p)
+                
 
-                  
-      
                 pluas = float(input("Masukkan pilihan menu : "))
       
                 if pluas == 1:
@@ -140,10 +161,8 @@ def matematika():
                 elif pluas == 7:
                     layang()
                 elif pluas == 8:
-                    lingkaran()
-                elif pluas == 9:
                     segilima()
-                elif pluas == 10:
+                elif pluas == 9:
                     segienam()
     
         # input fitur utama
